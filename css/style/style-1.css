@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=style-1.css.map */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  border: 5px inset blueviolet;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.wrapper .navigation-container {
+  border: 1px solid #000;
+}
+
+.wrapper .main-container {
+  border: 1px solid black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.wrapper .main-container .window {
+  border: 1px solid black;
+  width: 50%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.wrapper .main-container .window .roll-container {
+  border: 1px solid black;
+  width: 100%;
+  height: 500%;
+  position: absolute;
+}
+
+.wrapper .main-container .window .roll-container .roll {
+  border: 1px solid red;
+  height: 20%;
+}
+
+.wrapper .main-container .right-window .roll-container {
+  bottom: 0;
+}
+
+.wrapper .main-container .left-window .rollw-container {
+  top: 0;
+}
+/*# sourceMappingURL=style-1.css.map */

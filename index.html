@@ -17,18 +17,48 @@
 </head>
 
 <body>
-    <div class="main-bg border border-info">
-        <div class="container border border-danger">
-            <div class="desktop-nav">
-                <button>menu</button>
-                <button>about</button>
-                <button>resume</button>
-                <button>works</button>
-                <button>blog</button>
-                <button>contact</button>
+    <div class="wrapper">
+        <div class="navigation-container">
+            <button class="nav-btn">1</button>
+            <button class="nav-btn">2</button>
+            <button class="nav-btn">3</button>
+            <button class="nav-btn">4</button>
+            <button class="nav-btn">5</button>
+        </div>
+        <div class="main-container">
+            <div class="left-window window">
+                <div class="roll-container">
+                    <div class="roll">1</div>
+                    <div class="roll">2</div>
+                    <div class="roll">3</div>
+                    <div class="roll">4</div>
+                    <div class="roll">5</div>
+                </div>
+            </div>
+            <div class="right-window window">
+                <div class="roll-container">
+                    <div class="roll">1</div>
+                    <div class="roll">2</div>
+                    <div class="roll">3</div>
+                    <div class="roll">4</div>
+                    <div class="roll">5</div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // ____________________________________________________JS Style HTML according to number of .roll (start).
+        let rollContainer = document.getElementsByClassName('roll-container')[0];
+        let roll = document.getElementsByClassName('roll')[0];
+        var rollCounter = (roll.length) / 2;
+        // there is 2x .roll-container so half of it must count (/ 2)^^^^^^^^^^^^
+        var rollHeight = roll.clientHeight;
+
+        rollContainer.style.height = (rollCounter * 100) + "%";
+        roll.style.height = (100 / rollCounter) + "%";
+        // ____________________________________________________JS Style HTML according to nimber of .roll (end).
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    border: 5px inset blueviolet;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    // _______________________________________________1
+    .navigation-container {
+        border: 1px solid #000;
+        .nav-btn {}
+    }
+    // _______________________________________________2
+    .main-container {
+        border: 1px solid black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-flow: row nowrap;
+        .window {
+            border: 1px solid black;
+            width: 50%;
+            overflow-y: hidden;
+            position: relative;
+            .roll-container {
+                border: 1px solid black;
+                width: 100%;
+                height: 500%;
+                position: absolute;
+                .roll {
+                    border: 1px solid red;
+                    height: 20%;
+                }
+            }
+        }
+        .right-window {
+            .roll-container {
+                bottom: 0;
+            }
+        }
+        .left-window {
+            .rollw-container {
+                top: 0;
+            }
+        }
+    }
+}
