@@ -14,30 +14,63 @@
 
     <!-- import page style -->
     <link rel="stylesheet" href="css/style/style-1.css">
+
+    <!-- import vuejs file -->
+    <script src="js/vue.js"></script>
+
+    <script src="https://kit.fontawesome.com/f0a229a2d3.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="navigation-container">
-            <button class="nav-btn">1</button>
-            <button class="nav-btn">2</button>
-            <button class="nav-btn">3</button>
-            <button class="nav-btn">4</button>
-            <button class="nav-btn">5</button>
+    <div class="wrapper" id="demo">
+        <div class="navigation-container" :class="{'bg-lc-1':!darkMode, 'bg-dc-1':darkMode}" id="nav">
+            <button class="nav-btn" id="menuBtn" :class="{'bg-lc-2':!darkMode,'bg-dc-2':darkMode}"><i class="fas fa-bars txt-white"></i></button>
+            <button class="nav-btn active" id="navBtn1" :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}" onclick="navMove(this.id)"><i class="fas fa-home"></i></button>
+            <button class="nav-btn" id="navBtn2" :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}" onclick="navMove(this.id)"><i class="fas fa-user-tie"></i></button>
+            <button class="nav-btn" id="navBtn3" :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}" onclick="navMove(this.id)"><i class="fas fa-graduation-cap"></i></button>
+            <button class="nav-btn" id="navBtn4" :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}" onclick="navMove(this.id)"><i class="fas fa-briefcase"></i></button>
+            <button class="nav-btn" id="navBtn5" :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}" onclick="navMove(this.id)"><i class="fas fa-map-marker-alt"></i></button>
+            <button class="nav-btn" id="navBtn5" :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}" @click="darkMode = !darkMode">mode</button>
+            <p>{{ darkMode }}</p>
         </div>
         <div class="main-container">
             <div class="left-window window">
-                <div class="roll-container">
-                    <div class="roll">1</div>
-                    <div class="roll">2</div>
-                    <div class="roll">3</div>
-                    <div class="roll">4</div>
-                    <div class="roll">5</div>
+                <div class="roll-container" id="leftRoll">
+                    <div class="roll ">
+                        1
+                    </div>
+                    <div class="roll bg-secondary">
+                        <figure class="roll-fig">
+                            <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img5.jpg" alt="roll 2">
+                        </figure>
+
+                    </div>
+                    <div class="roll bg-success">
+                        <figure class="roll-fig">
+                            <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img4.jpg" alt="roll 3">
+                        </figure>
+                    </div>
+                    <div class="roll bg-warning">
+                        <figure class="roll-fig">
+                            <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img3.jpg" alt="roll 4">
+                        </figure>
+                    </div>
+                    <div class="roll bg-info">
+                        <figure class="roll-fig">
+                            <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img.jpg" alt="roll 5">
+                        </figure>
+                    </div>
                 </div>
             </div>
             <div class="right-window window">
-                <div class="roll-container">
-                    <div class="roll">1</div>
+                <div class="roll-container" id="rightRoll">
+
+                    <div class="roll">
+                        <figure class="roll-fig">
+                            <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img2.jpg" alt="roll 1">
+                        </figure>
+                    </div>
                     <div class="roll">2</div>
                     <div class="roll">3</div>
                     <div class="roll">4</div>
@@ -47,18 +80,33 @@
         </div>
     </div>
 
+
     <script>
-        // ____________________________________________________JS Style HTML according to number of .roll (start).
-        let rollContainer = document.getElementsByClassName('roll-container')[0];
-        let roll = document.getElementsByClassName('roll')[0];
-        var rollCounter = (roll.length) / 2;
-        // there is 2x .roll-container so half of it must count (/ 2)^^^^^^^^^^^^
+        var vm = new Vue({
+            el: "#demo",
+            data: {
+                darkMode: false,
+            },
+            methods: {
+
+            }
+        })
+    </script>
+
+    <script>
+        // ____________________________________________________JS Style HTML according to number of .roll
+        var roll = document.getElementsByClassName('roll')[0];
         var rollHeight = roll.clientHeight;
 
-        rollContainer.style.height = (rollCounter * 100) + "%";
-        roll.style.height = (100 / rollCounter) + "%";
-        // ____________________________________________________JS Style HTML according to nimber of .roll (end).
+        function navMove(id) {
+            var navCounter = (id.substr(id.length - 1));
+            document.getElementsByClassName('active')[0].classList.remove('active');
+            document.getElementById(id).classList.add('active');
+            document.getElementById("leftRoll").style.transform = "translateY(" + (navCounter - 1) * rollHeight + "px)";
+            document.getElementById("rightRoll").style.transform = "translateY(" + -(navCounter - 1) * this.rollHeight + "px)";
+        }
     </script>
+
 </body>
 
 </html>

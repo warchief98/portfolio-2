@@ -1,0 +1,96 @@
+.fz-1 {
+  font-size: 14px;
+}
+
+.fz-2 {
+  font-size: 16px;
+}
+
+.fz-3 {
+  font-size: 18px;
+}
+
+.fz-4 {
+  font-size: 20px;
+}
+
+.bg-lc-1 {
+  background-color: #222;
+}
+
+.bg-lc-2 {
+  background-color: #de3926 !important;
+}
+
+.bg-lc-3 {
+  background-color: #777;
+}
+
+.bg-lc-4 {
+  background-color: #f3f3f3;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.txt-lc-1 {
+  color: #222;
+}
+
+.txt-lc-2 {
+  color: #de3926;
+}
+
+.txt-lc-3 {
+  color: #777;
+}
+
+.txt-lc-4 {
+  color: #f3f3f3;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: black;
+}
+
+.bg-dc-1 {
+  background-color: red;
+}
+
+.bg-dc-2 {
+  background-color: green;
+}
+
+.bg-dc-3 {
+  background-color: blue;
+}
+
+.bg-dc-4 {
+  background-color: yellow;
+}
+
+.txt-dc-1 {
+  color: red;
+}
+
+.txt-dc-2 {
+  color: green;
+}
+
+.txt-dc-3 {
+  color: blue;
+}
+
+.txt-dc-4 {
+  color: yellow;
+}
+/*# sourceMappingURL=var.css.map */

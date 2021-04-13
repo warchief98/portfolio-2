@@ -1,7 +1,102 @@
+.fz-1 {
+  font-size: 14px;
+}
+
+.fz-2 {
+  font-size: 16px;
+}
+
+.fz-3 {
+  font-size: 18px;
+}
+
+.fz-4 {
+  font-size: 20px;
+}
+
+.bg-lc-1 {
+  background-color: #222;
+}
+
+.bg-lc-2 {
+  background-color: #de3926 !important;
+}
+
+.bg-lc-3 {
+  background-color: #777;
+}
+
+.bg-lc-4 {
+  background-color: #f3f3f3;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.txt-lc-1 {
+  color: #222;
+}
+
+.txt-lc-2 {
+  color: #de3926;
+}
+
+.txt-lc-3 {
+  color: #777;
+}
+
+.txt-lc-4 {
+  color: #f3f3f3;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: black;
+}
+
+.bg-dc-1 {
+  background-color: red;
+}
+
+.bg-dc-2 {
+  background-color: green;
+}
+
+.bg-dc-3 {
+  background-color: blue;
+}
+
+.bg-dc-4 {
+  background-color: yellow;
+}
+
+.txt-dc-1 {
+  color: red;
+}
+
+.txt-dc-2 {
+  color: green;
+}
+
+.txt-dc-3 {
+  color: blue;
+}
+
+.txt-dc-4 {
+  color: yellow;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
-  border: 5px inset blueviolet;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -16,11 +111,40 @@
 }
 
 .wrapper .navigation-container {
-  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 85px;
+}
+
+.wrapper .navigation-container .nav-btn {
+  width: 100%;
+  height: 78px;
+  border: none;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.1);
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.wrapper .navigation-container .nav-btn:active {
+  color: white;
+}
+
+.wrapper .navigation-container .active {
+  color: white;
 }
 
 .wrapper .main-container {
-  border: 1px solid black;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,29 +162,112 @@
 }
 
 .wrapper .main-container .window {
-  border: 1px solid black;
   width: 50%;
   overflow-y: hidden;
   position: relative;
 }
 
 .wrapper .main-container .window .roll-container {
-  border: 1px solid black;
   width: 100%;
-  height: 500%;
+  height: 500vh;
   position: absolute;
+  border: none;
+  -webkit-transition: 0.5s cubic-bezier(1, 0.15, 0.53, 0.93);
+  transition: 0.5s cubic-bezier(1, 0.15, 0.53, 0.93);
 }
 
 .wrapper .main-container .window .roll-container .roll {
-  border: 1px solid red;
-  height: 20%;
+  height: 100vh;
+  border: inherit;
+}
+
+.wrapper .main-container .right-window {
+  width: 100%;
 }
 
 .wrapper .main-container .right-window .roll-container {
+  top: 0;
+}
+
+.wrapper .main-container .right-window .roll-container .roll {
+  background-color: #f7f3e9;
+  font-size: 100px;
+  font-family: bold;
+  color: #5eaaa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper .main-container .right-window .roll-container .roll .roll-fig {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.wrapper .main-container .right-window .roll-container .roll .roll-fig .roll-img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 991px) {
+  .wrapper .main-container .right-window .roll-container .roll .roll-fig .roll-img {
+    width: 100%;
+    height: auto;
+    max-height: auto;
+  }
+}
+
+.wrapper .main-container .left-window {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .wrapper .main-container .left-window {
+    display: none;
+  }
+}
+
+.wrapper .main-container .left-window .roll-container {
   bottom: 0;
 }
 
-.wrapper .main-container .left-window .rollw-container {
-  top: 0;
+.wrapper .main-container .left-window .roll-container .roll {
+  font-size: 100px;
+  font-family: bold;
+  color: #5eaaa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrapper .main-container .left-window .roll-container .roll .roll-fig {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.wrapper .main-container .left-window .roll-container .roll .roll-fig .roll-img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
 }
 /*# sourceMappingURL=style-1.css.map */

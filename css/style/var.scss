@@ -1,0 +1,119 @@
+// _____________________________asigning light colors variables
+$l-color-1:#222;
+$l-color-2:#de3926;
+$l-color-3:#777;
+$l-color-4:#f3f3f3;
+$white:white;
+$black:black;
+// _____________________________asigning dark colors variables
+$d-color-1:red;
+$d-color-2:green;
+$d-color-3:blue;
+$d-color-4:yellow;
+// _____________________________font sizes variables
+$fz-1:14;
+$fz-2:16;
+$fz-3:18;
+$fz-4:20;
+// *******************************font size classes
+.fz-1 {
+    font-size: $fz-1 + px;
+}
+
+.fz-2 {
+    font-size: $fz-2 + px;
+}
+
+.fz-3 {
+    font-size: $fz-3 + px;
+}
+
+.fz-4 {
+    font-size: $fz-4 + px;
+}
+
+// *******************************light colors classes
+// background-color classes
+.bg-lc-1 {
+    background-color: $l-color-1;
+}
+
+.bg-lc-2 {
+    background-color: $l-color-2 !important;
+}
+
+.bg-lc-3 {
+    background-color: $l-color-3;
+}
+
+.bg-lc-4 {
+    background-color: $l-color-4;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+// text color classes
+.txt-lc-1 {
+    color: $l-color-1;
+}
+
+.txt-lc-2 {
+    color: $l-color-2;
+}
+
+.txt-lc-3 {
+    color: $l-color-3;
+}
+
+.txt-lc-4 {
+    color: $l-color-4;
+}
+
+.txt-white {
+    color: $white;
+}
+
+.txt-black {
+    color: $black;
+}
+
+// *******************************dark colors classes
+// background-color classes
+.bg-dc-1 {
+    background-color: $d-color-1;
+}
+
+.bg-dc-2 {
+    background-color: $d-color-2;
+}
+
+.bg-dc-3 {
+    background-color: $d-color-3;
+}
+
+.bg-dc-4 {
+    background-color: $d-color-4;
+}
+
+// text color classes
+.txt-dc-1 {
+    color: $d-color-1;
+}
+
+.txt-dc-2 {
+    color: $d-color-2;
+}
+
+.txt-dc-3 {
+    color: $d-color-3;
+}
+
+.txt-dc-4 {
+    color: $d-color-4;
+}
