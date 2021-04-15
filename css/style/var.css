@@ -11,7 +11,11 @@
 }
 
 .fz-4 {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.fz-5 {
+  font-size: 30px;
 }
 
 .bg-lc-1 {
@@ -78,6 +82,14 @@
   background-color: yellow;
 }
 
+.bg-not-white {
+  background-color: black;
+}
+
+.bg-not-black {
+  background-color: white;
+}
+
 .txt-dc-1 {
   color: red;
 }
@@ -92,5 +104,13 @@
 
 .txt-dc-4 {
   color: yellow;
+}
+
+.txt-not-white {
+  color: black;
+}
+
+.txt-not-black {
+  color: white;
 }
 /*# sourceMappingURL=var.css.map */

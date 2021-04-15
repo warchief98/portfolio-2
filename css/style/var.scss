@@ -1,3 +1,4 @@
+$base-transition:0.5;
 // _____________________________asigning light colors variables
 $l-color-1:#222;
 $l-color-2:#de3926;
@@ -10,11 +11,14 @@ $d-color-1:red;
 $d-color-2:green;
 $d-color-3:blue;
 $d-color-4:yellow;
+$not-white:black;
+$not-black:white;
 // _____________________________font sizes variables
 $fz-1:14;
 $fz-2:16;
 $fz-3:18;
-$fz-4:20;
+$fz-4:24;
+$fz-5:30;
 // *******************************font size classes
 .fz-1 {
     font-size: $fz-1 + px;
@@ -30,6 +34,10 @@ $fz-4:20;
 
 .fz-4 {
     font-size: $fz-4 + px;
+}
+
+.fz-5 {
+    font-size: $fz-5 + px;
 }
 
 // *******************************light colors classes
@@ -101,6 +109,14 @@ $fz-4:20;
     background-color: $d-color-4;
 }
 
+.bg-not-white {
+    background-color: $not-white;
+}
+
+.bg-not-black {
+    background-color: $not-black;
+}
+
 // text color classes
 .txt-dc-1 {
     color: $d-color-1;
@@ -116,4 +132,12 @@ $fz-4:20;
 
 .txt-dc-4 {
     color: $d-color-4;
+}
+
+.txt-not-white {
+    color: $not-white;
+}
+
+.txt-not-black {
+    color: $not-black;
 }

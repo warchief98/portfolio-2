@@ -14,6 +14,7 @@
         align-items: center;
         justify-content: flex-start;
         width: 85px;
+        z-index: 10;
         .nav-btn {
             width: 100%;
             height: 78px;
@@ -21,12 +22,50 @@
             border-bottom: 1px solid rgba(192, 192, 192, 0.1);
             background-color: transparent;
             font-size: 25px;
+            position: relative;
+            &:hover .tooltips {
+                opacity: 1;
+                animation: navTooltip 0.3s ease-in-out running;
+            }
             &:active {
                 color: white;
+            }
+            .tooltips {
+                position: absolute;
+                left: calc(100% + 10px);
+                top: 50%;
+                transform: translateY(-50%);
+                color: $white;
+                padding: 5px 16px;
+                opacity: 0;
+                &:after {
+                    content: "";
+                    background-color: inherit;
+                    width: 13px;
+                    height: 13px;
+                    position: absolute;
+                    left: -6px;
+                    top: 50%;
+                    transform: translateY(-50%) rotateZ(45deg);
+                }
+            }
+            @keyframes navTooltip {
+                0% {
+                    transform: translateY(-50%) rotateZ(-7deg)
+                }
+                50% {
+                    transform: translateY(-50%) rotateZ(7deg)
+                }
+                100% {
+                    transform: translateY(-50%) rotateZ(0deg)
+                }
             }
         }
         .active {
             color: $white;
+            .tooltips {
+                opacity: 0 !important;
+            }
         }
     }
     // _______________________________________________2
@@ -49,6 +88,147 @@
                 .roll {
                     height: 100vh;
                     border: inherit;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-flow: column nowrap;
+                    @extend .bg-white;
+                    overflow: hidden;
+                    .what-can-i-do-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-flow: row wrap;
+                        div {
+                            width: 50%;
+                        }
+                    }
+                    .roll-devider {
+                        width: 100%;
+                        padding: 60px;
+                        border-bottom: 2px solid rgba(192, 192, 192, 0.3);
+                    }
+                    .roll-fig {
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        margin: 0;
+                        position: relative;
+                        .roll-img {
+                            height: 100%;
+                            width: 100%;
+                            // object-fit property help to img to be cover or contain in its box(width and height must set 100%)
+                            object-fit: cover;
+                        }
+                        .name-tag {
+                            height: 120px;
+                            position: absolute;
+                            right: 0;
+                            top: 10%;
+                            transform: translatey(100%);
+                            opacity: 0;
+                            transition: $base-transition+s;
+                            @extend .fz-5;
+                            font-weight: bold;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-transform: uppercase;
+                        }
+                        .name-tag-move {
+                            transform: translateY(0);
+                            opacity: 1;
+                            transition-delay: 0.5s;
+                            padding: 40px 60px;
+                        }
+                        .family-tag {
+                            height: 120px;
+                            position: absolute;
+                            left: 0;
+                            top: 10%;
+                            transform: translateY(-100%);
+                            opacity: 0;
+                            transition: $base-transition+s;
+                            @extend .fz-5;
+                            font-weight: bold;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 40px 60px;
+                            text-transform: uppercase;
+                        }
+                        .family-tag-move {
+                            transform: translateY(0);
+                            opacity: 1;
+                            transition-delay: 0.5s;
+                        }
+                        .describe-tag {
+                            position: absolute;
+                            left: 0;
+                            top: calc(10% + 120px);
+                            transform: translateX(-100%);
+                            opacity: 0;
+                            transition: $base-transition+s;
+                            @extend .fz-4;
+                            padding: 30px 60px;
+                        }
+                        .describe-tag-move {
+                            transform: translateX(0);
+                            opacity: 1;
+                            transition-delay: 0.5s;
+                        }
+                        .social-tag {
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: absolute;
+                            left: 0;
+                            bottom: 10%;
+                            transform: translateY(100%);
+                            opacity: 0;
+                            transition: $base-transition+s;
+                            figure {
+                                width: 80px;
+                                height: 80px;
+                                overflow: hidden;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0;
+                                img {
+                                    width: 37%;
+                                    height: 37%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                        .social-tag-move {
+                            transform: translateY(0);
+                            opacity: 1;
+                            transition-delay: 0.5s;
+                        }
+                    }
+                    .roll-title {
+                        font-weight: bold;
+                        @extend .fz-4;
+                        margin: 0;
+                        margin-bottom: 30px;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            width: 100px;
+                            height: 3px;
+                            @extend .bg-lc-2;
+                            position: absolute;
+                            text-align: center;
+                            bottom: -15px;
+                            left: 0;
+                            margin: 0;
+                            z-index: 1;
+                        }
+                    }
+                    .roll-text {}
                 }
             }
         }
@@ -57,62 +237,31 @@
             .roll-container {
                 top: 0;
                 .roll {
-                    background-color: #f7f3e9;
-                    font-size: 100px;
-                    font-family: bold;
-                    color: #5eaaa8;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    overflow: hidden;
-                    .roll-fig {
-                        width: 100%;
-                        height: 100%;
-                        overflow: hidden;
-                        margin: 0;
-                        .roll-img {
-                            width: 100%;
-                            height: 100%;
-                            max-height: 100%;
-                            @media (max-width: 991px) {
-                                width: 100%;
-                                height: auto;
-                                max-height: auto;
-                            }
-                        }
-                    }
+                    overflow-x: hidden;
+                    overflow-y: scroll;
                 }
             }
         }
         .left-window {
             width: 100%;
-            @media (max-width: 991px) {
-                display: none;
-            }
             .roll-container {
                 bottom: 0;
-                .roll {
-                    font-size: 100px;
-                    font-family: bold;
-                    color: #5eaaa8;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    .roll-fig {
-                        width: 100%;
-                        height: 100%;
-                        overflow: hidden;
-                        margin: 0;
-                        .roll-img {
-                            width: 100%;
-                            height: 100%;
-                            max-height: 100%;
-                        }
-                    }
-                }
             }
+        }
+    }
+    .slider-container {
+        width: 100%;
+        min-height: 200px;
+        position: relative;
+        overflow-x: hidden;
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 1s;
         }
     }
 }
