@@ -1,13 +1,13 @@
-.fz-1 {
-  font-size: 14px;
-}
-
-.fz-2 {
+.fz-1, .wrapper .main-container .window .roll-container .roll .roll-text {
   font-size: 16px;
 }
 
-.fz-3 {
+.fz-2, .wrapper .main-container .window .roll-container .roll h4, .wrapper .main-container .window .roll-container .roll .btn-black, .wrapper .main-container .window .roll-container .roll .btn-white {
   font-size: 18px;
+}
+
+.fz-3, .wrapper .main-container .window .roll-container .roll h3, .wrapper .main-container .window .roll-container .roll .personal-info li {
+  font-size: 20px;
 }
 
 .fz-4, .wrapper .main-container .window .roll-container .roll .roll-fig .describe-tag, .wrapper .main-container .window .roll-container .roll .roll-title {
@@ -112,6 +112,326 @@
 
 .txt-not-black {
   color: white;
+}
+
+.pd-1 {
+  padding: 5px;
+}
+
+.pd-2 {
+  padding: 10px;
+}
+
+.pd-3, .wrapper .slider-container .slide {
+  padding: 15px;
+}
+
+.pd-4 {
+  padding: 20px;
+}
+
+.pd-5 {
+  padding: 25px;
+}
+
+.pd-6 {
+  padding: 30px;
+}
+
+.pd-7 {
+  padding: 35px;
+}
+
+.pd-8 {
+  padding: 40px;
+}
+
+.pd-t-1 {
+  padding-top: 5px;
+}
+
+.pd-t-2, .wrapper .main-container .window .roll-container .roll .personal-info li {
+  padding-top: 10px;
+}
+
+.pd-t-3 {
+  padding-top: 15px;
+}
+
+.pd-t-4 {
+  padding-top: 20px;
+}
+
+.pd-t-5 {
+  padding-top: 25px;
+}
+
+.pd-t-6 {
+  padding-top: 30px;
+}
+
+.pd-t-7 {
+  padding-top: 35px;
+}
+
+.pd-t-8 {
+  padding-top: 40px;
+}
+
+.pd-b-1 {
+  padding-bottom: 5px;
+}
+
+.pd-b-2, .wrapper .main-container .window .roll-container .roll .personal-info li {
+  padding-bottom: 10px;
+}
+
+.pd-b-3, .wrapper .main-container .window .roll-container .roll .text-container, .wrapper .main-container .window .roll-container .roll .text-container h4 {
+  padding-bottom: 15px;
+}
+
+.pd-b-4 {
+  padding-bottom: 20px;
+}
+
+.pd-b-5 {
+  padding-bottom: 25px;
+}
+
+.pd-b-6 {
+  padding-bottom: 30px;
+}
+
+.pd-b-7 {
+  padding-bottom: 35px;
+}
+
+.pd-b-8 {
+  padding-bottom: 40px;
+}
+
+.pd-r-1 {
+  padding-right: 5px;
+}
+
+.pd-r-2 {
+  padding-right: 10px;
+}
+
+.pd-r-3 {
+  padding-right: 15px;
+}
+
+.pd-r-4 {
+  padding-right: 20px;
+}
+
+.pd-r-5 {
+  padding-right: 25px;
+}
+
+.pd-r-6 {
+  padding-right: 30px;
+}
+
+.pd-r-7 {
+  padding-right: 35px;
+}
+
+.pd-r-8 {
+  padding-right: 40px;
+}
+
+.pd-l-1, .wrapper .main-container .window .roll-container .roll .personal-info li figure figcaption {
+  padding-left: 5px;
+}
+
+.pd-l-2 {
+  padding-left: 10px;
+}
+
+.pd-l-3 {
+  padding-left: 15px;
+}
+
+.pd-l-4 {
+  padding-left: 20px;
+}
+
+.pd-l-5 {
+  padding-left: 25px;
+}
+
+.pd-l-6 {
+  padding-left: 30px;
+}
+
+.pd-l-7 {
+  padding-left: 35px;
+}
+
+.pd-l-8 {
+  padding-left: 40px;
+}
+
+.mg-1 {
+  margin: 5px;
+}
+
+.mg-2 {
+  margin: 10px;
+}
+
+.mg-3 {
+  margin: 15px;
+}
+
+.mg-4 {
+  margin: 20px;
+}
+
+.mg-5 {
+  margin: 25px;
+}
+
+.mg-6 {
+  margin: 30px;
+}
+
+.mg-7 {
+  margin: 35px;
+}
+
+.mg-8 {
+  margin: 40px;
+}
+
+.mg-t-1 {
+  margin-top: 5px;
+}
+
+.mg-t-2 {
+  margin-top: 10px;
+}
+
+.mg-t-3 {
+  margin-top: 15px;
+}
+
+.mg-t-4 {
+  margin-top: 20px;
+}
+
+.mg-t-5 {
+  margin-top: 25px;
+}
+
+.mg-t-6 {
+  margin-top: 30px;
+}
+
+.mg-t-7 {
+  margin-top: 35px;
+}
+
+.mg-t-8 {
+  margin-top: 40px;
+}
+
+.mg-b-1 {
+  margin-bottom: 5px;
+}
+
+.mg-b-2 {
+  margin-bottom: 10px;
+}
+
+.mg-b-3, .wrapper .main-container .window .roll-container .roll .text-container, .wrapper .main-container .window .roll-container .roll .text-container h4 {
+  margin-bottom: 15px;
+}
+
+.mg-b-4, .wrapper .main-container .window .roll-container .roll .personal-info {
+  margin-bottom: 20px;
+}
+
+.mg-b-5 {
+  margin-bottom: 25px;
+}
+
+.mg-b-6 {
+  margin-bottom: 30px;
+}
+
+.mg-b-7 {
+  margin-bottom: 35px;
+}
+
+.mg-b-8 {
+  margin-bottom: 40px;
+}
+
+.mg-r-1 {
+  margin-right: 5px;
+}
+
+.mg-r-2 {
+  margin-right: 10px;
+}
+
+.mg-r-3 {
+  margin-right: 15px;
+}
+
+.mg-r-4 {
+  margin-right: 20px;
+}
+
+.mg-r-5 {
+  margin-right: 25px;
+}
+
+.mg-r-6 {
+  margin-right: 30px;
+}
+
+.mg-r-7 {
+  margin-right: 35px;
+}
+
+.mg-r-8 {
+  margin-right: 40px;
+}
+
+.mg-l-1 {
+  margin-left: 5px;
+}
+
+.mg-l-2 {
+  margin-left: 10px;
+}
+
+.mg-l-3 {
+  margin-left: 15px;
+}
+
+.mg-l-4 {
+  margin-left: 20px;
+}
+
+.mg-l-5 {
+  margin-left: 25px;
+}
+
+.mg-l-6 {
+  margin-left: 30px;
+}
+
+.mg-l-7 {
+  margin-left: 35px;
+}
+
+.mg-l-8 {
+  margin-left: 40px;
 }
 
 .wrapper {
@@ -443,13 +763,27 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  position: relative;
+}
+
+.wrapper .main-container .window .roll-container .roll .roll-fig .social-tag figure:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .wrapper .main-container .window .roll-container .roll .roll-fig .social-tag figure img {
-  width: 37%;
-  height: 37%;
+  width: 70%;
+  height: 70%;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-filter: grayscale(0.7);
+          filter: grayscale(0.7);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .wrapper .main-container .window .roll-container .roll .roll-fig .social-tag-move {
@@ -479,6 +813,98 @@
   z-index: 1;
 }
 
+.wrapper .main-container .window .roll-container .roll h3 {
+  font-weight: bold;
+}
+
+.wrapper .main-container .window .roll-container .roll h4 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.wrapper .main-container .window .roll-container .roll .text-container h4 {
+  border-bottom: 2px solid rgba(192, 192, 192, 0.3);
+}
+
+.wrapper .main-container .window .roll-container .roll .roll-text {
+  color: #777;
+}
+
+.wrapper .main-container .window .roll-container .roll .personal-info {
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+  border-top: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.wrapper .main-container .window .roll-container .roll .personal-info li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: #777;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.wrapper .main-container .window .roll-container .roll .personal-info li figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0;
+}
+
+.wrapper .main-container .window .roll-container .roll .personal-info li figure figcaption {
+  font-weight: bold;
+}
+
+.wrapper .main-container .window .roll-container .roll .personal-info li i {
+  width: 30px;
+}
+
+.wrapper .main-container .window .roll-container .roll .btn-black {
+  text-transform: uppercase;
+  padding: 8px 20px;
+  margin-right: 5px;
+  border: 2px solid #222;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: bold;
+  color: white;
+  background-color: #222;
+}
+
+.wrapper .main-container .window .roll-container .roll .btn-black:hover {
+  background-color: #de3926;
+  color: white;
+  border-color: #de3926;
+}
+
+.wrapper .main-container .window .roll-container .roll .btn-white {
+  text-transform: uppercase;
+  padding: 8px 20px;
+  margin-right: 5px;
+  border: 2px solid #222;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: bold;
+  background-color: white;
+  color: #222;
+}
+
+.wrapper .main-container .window .roll-container .roll .btn-white:hover {
+  background-color: #de3926;
+  color: white;
+  border-color: #de3926;
+}
+
 .wrapper .main-container .right-window {
   width: 100%;
 }
@@ -502,19 +928,20 @@
 
 .wrapper .slider-container {
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .wrapper .slider-container .slide {
   width: 100%;
-  height: 100%;
+  height: 70%;
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 0;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+  background-color: #f3f3f3;
 }
 /*# sourceMappingURL=style-1.css.map */

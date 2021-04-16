@@ -1,9 +1,25 @@
+@mixin btn {
+    text-transform: uppercase;
+    padding: 8px 20px;
+    margin-right: 5px;
+    border: 2px solid $l-color-1;
+    transition: 0.2s;
+    @extend .fz-2;
+    font-weight: bold;
+    &:hover {
+        background-color: $l-color-2;
+        color: white;
+        border-color: $l-color-2;
+    }
+}
+
 $base-transition:0.5;
 // _____________________________asigning light colors variables
 $l-color-1:#222;
 $l-color-2:#de3926;
 $l-color-3:#777;
 $l-color-4:#f3f3f3;
+$l-color-5:#f3f3f3;
 $white:white;
 $black:black;
 // _____________________________asigning dark colors variables
@@ -14,9 +30,9 @@ $d-color-4:yellow;
 $not-white:black;
 $not-black:white;
 // _____________________________font sizes variables
-$fz-1:14;
-$fz-2:16;
-$fz-3:18;
+$fz-1:16;
+$fz-2:18;
+$fz-3:20;
 $fz-4:24;
 $fz-5:30;
 // *******************************font size classes
@@ -140,4 +156,344 @@ $fz-5:30;
 
 .txt-not-black {
     color: $not-black;
+}
+
+//________________________________________________ padding
+$pd-mg-1:5;
+$pd-mg-2:10;
+$pd-mg-3:15;
+$pd-mg-4:20;
+$pd-mg-5:25;
+$pd-mg-6:30;
+$pd-mg-7:35;
+$pd-mg-8:40;
+// ********padding classes
+.pd-1 {
+    padding: $pd-mg-1 + px;
+}
+
+.pd-2 {
+    padding: $pd-mg-2 + px;
+}
+
+.pd-3 {
+    padding: $pd-mg-3 + px;
+}
+
+.pd-4 {
+    padding: $pd-mg-4 + px;
+}
+
+.pd-5 {
+    padding: $pd-mg-5 + px;
+}
+
+.pd-6 {
+    padding: $pd-mg-6 + px;
+}
+
+.pd-7 {
+    padding: $pd-mg-7 + px;
+}
+
+.pd-8 {
+    padding: $pd-mg-8 + px;
+}
+
+// ******padding top
+.pd-t-1 {
+    padding-top: $pd-mg-1 + px;
+}
+
+.pd-t-2 {
+    padding-top: $pd-mg-2 + px;
+}
+
+.pd-t-3 {
+    padding-top: $pd-mg-3 + px;
+}
+
+.pd-t-4 {
+    padding-top: $pd-mg-4 + px;
+}
+
+.pd-t-5 {
+    padding-top: $pd-mg-5 + px;
+}
+
+.pd-t-6 {
+    padding-top: $pd-mg-6 + px;
+}
+
+.pd-t-7 {
+    padding-top: $pd-mg-7 + px;
+}
+
+.pd-t-8 {
+    padding-top: $pd-mg-8 + px;
+}
+
+// ******padding bot
+.pd-b-1 {
+    padding-bottom: $pd-mg-1 + px;
+}
+
+.pd-b-2 {
+    padding-bottom: $pd-mg-2 + px;
+}
+
+.pd-b-3 {
+    padding-bottom: $pd-mg-3 + px;
+}
+
+.pd-b-4 {
+    padding-bottom: $pd-mg-4 + px;
+}
+
+.pd-b-5 {
+    padding-bottom: $pd-mg-5 + px;
+}
+
+.pd-b-6 {
+    padding-bottom: $pd-mg-6 + px;
+}
+
+.pd-b-7 {
+    padding-bottom: $pd-mg-7 + px;
+}
+
+.pd-b-8 {
+    padding-bottom: $pd-mg-8 + px;
+}
+
+// ******padding right
+.pd-r-1 {
+    padding-right: $pd-mg-1 + px;
+}
+
+.pd-r-2 {
+    padding-right: $pd-mg-2 + px;
+}
+
+.pd-r-3 {
+    padding-right: $pd-mg-3 + px;
+}
+
+.pd-r-4 {
+    padding-right: $pd-mg-4 + px;
+}
+
+.pd-r-5 {
+    padding-right: $pd-mg-5 + px;
+}
+
+.pd-r-6 {
+    padding-right: $pd-mg-6 + px;
+}
+
+.pd-r-7 {
+    padding-right: $pd-mg-7 + px;
+}
+
+.pd-r-8 {
+    padding-right: $pd-mg-8 + px;
+}
+
+// ******padding left
+.pd-l-1 {
+    padding-left: $pd-mg-1 + px;
+}
+
+.pd-l-2 {
+    padding-left: $pd-mg-2 + px;
+}
+
+.pd-l-3 {
+    padding-left: $pd-mg-3 + px;
+}
+
+.pd-l-4 {
+    padding-left: $pd-mg-4 + px;
+}
+
+.pd-l-5 {
+    padding-left: $pd-mg-5 + px;
+}
+
+.pd-l-6 {
+    padding-left: $pd-mg-6 + px;
+}
+
+.pd-l-7 {
+    padding-left: $pd-mg-7 + px;
+}
+
+.pd-l-8 {
+    padding-left: $pd-mg-8 + px;
+}
+
+//________________________________________________ margin
+// ********margin classes
+.mg-1 {
+    margin: $pd-mg-1 + px;
+}
+
+.mg-2 {
+    margin: $pd-mg-2 + px;
+}
+
+.mg-3 {
+    margin: $pd-mg-3 + px;
+}
+
+.mg-4 {
+    margin: $pd-mg-4 + px;
+}
+
+.mg-5 {
+    margin: $pd-mg-5 + px;
+}
+
+.mg-6 {
+    margin: $pd-mg-6 + px;
+}
+
+.mg-7 {
+    margin: $pd-mg-7 + px;
+}
+
+.mg-8 {
+    margin: $pd-mg-8 + px;
+}
+
+// ******margin top
+.mg-t-1 {
+    margin-top: $pd-mg-1 + px;
+}
+
+.mg-t-2 {
+    margin-top: $pd-mg-2 + px;
+}
+
+.mg-t-3 {
+    margin-top: $pd-mg-3 + px;
+}
+
+.mg-t-4 {
+    margin-top: $pd-mg-4 + px;
+}
+
+.mg-t-5 {
+    margin-top: $pd-mg-5 + px;
+}
+
+.mg-t-6 {
+    margin-top: $pd-mg-6 + px;
+}
+
+.mg-t-7 {
+    margin-top: $pd-mg-7 + px;
+}
+
+.mg-t-8 {
+    margin-top: $pd-mg-8 + px;
+}
+
+// ******margin bot
+.mg-b-1 {
+    margin-bottom: $pd-mg-1 + px;
+}
+
+.mg-b-2 {
+    margin-bottom: $pd-mg-2 + px;
+}
+
+.mg-b-3 {
+    margin-bottom: $pd-mg-3 + px;
+}
+
+.mg-b-4 {
+    margin-bottom: $pd-mg-4 + px;
+}
+
+.mg-b-5 {
+    margin-bottom: $pd-mg-5 + px;
+}
+
+.mg-b-6 {
+    margin-bottom: $pd-mg-6 + px;
+}
+
+.mg-b-7 {
+    margin-bottom: $pd-mg-7 + px;
+}
+
+.mg-b-8 {
+    margin-bottom: $pd-mg-8 + px;
+}
+
+// ******margin right
+.mg-r-1 {
+    margin-right: $pd-mg-1 + px;
+}
+
+.mg-r-2 {
+    margin-right: $pd-mg-2 + px;
+}
+
+.mg-r-3 {
+    margin-right: $pd-mg-3 + px;
+}
+
+.mg-r-4 {
+    margin-right: $pd-mg-4 + px;
+}
+
+.mg-r-5 {
+    margin-right: $pd-mg-5 + px;
+}
+
+.mg-r-6 {
+    margin-right: $pd-mg-6 + px;
+}
+
+.mg-r-7 {
+    margin-right: $pd-mg-7 + px;
+}
+
+.mg-r-8 {
+    margin-right: $pd-mg-8 + px;
+}
+
+// ******margin left
+.mg-l-1 {
+    margin-left: $pd-mg-1 + px;
+}
+
+.mg-l-2 {
+    margin-left: $pd-mg-2 + px;
+}
+
+.mg-l-3 {
+    margin-left: $pd-mg-3 + px;
+}
+
+.mg-l-4 {
+    margin-left: $pd-mg-4 + px;
+}
+
+.mg-l-5 {
+    margin-left: $pd-mg-5 + px;
+}
+
+.mg-l-6 {
+    margin-left: $pd-mg-6 + px;
+}
+
+.mg-l-7 {
+    margin-left: $pd-mg-7 + px;
+}
+
+.mg-l-8 {
+    margin-left: $pd-mg-8 + px;
 }

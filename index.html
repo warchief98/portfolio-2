@@ -91,32 +91,37 @@
                             <div class="family-tag" :class="{'bg-lc-1':!darkMode,'bg-dc-1':darkMode,'family-tag-move':tagMove,'txt-white' :!darkMode,'txt-not-white' :darkMode}">Mohseni</div>
                             <div class="describe-tag" :class="{'bg-white':!darkMode,'bg-not-white':darkMode,'describe-tag-move':tagMove ,'txt-black' :!darkMode,'txt-not-black' :darkMode}">Web Designer & Developer</div>
                             <div class="social-tag" :class="{'bg-white':!darkMode,'bg-not-white':darkMode,'social-tag-move':tagMove}">
-                                <figure>
-                                    <img src="pic/facebook.png" alt="">
-                                    <a href=""></a>
-                                </figure>
-                                <figure>
-                                    <img src="pic/twitter.png" alt="">
-                                    <a href=""></a>
-                                </figure>
-                                <figure>
-                                    <img src="pic/instagram.png" alt="">
-                                    <a href=""></a>
-                                </figure>
-                                <figure>
-                                    <img src="pic/linkedin.png" alt="">
-                                    <a href=""></a>
-                                </figure>
-                                <figure>
-                                    <img src="" alt="">
-                                    <a href="">5</a>
-                                </figure>
+                                <a href="#">
+                                    <figure>
+                                        <img src="pic/icons/Linkedin-Icon.png" alt="Linkedin">
+                                    </figure>
+                                </a>
+                                <a href="#">
+                                    <figure>
+                                        <img src="pic/icons/Email-Icon.png" alt="Email">
+                                    </figure>
+                                </a>
+                                <a href="#">
+                                    <figure>
+                                        <img src="pic/icons/facebook-Icon.png" alt="facebook">
+                                    </figure>
+                                </a>
+                                <a href="#">
+                                    <figure>
+                                        <img src="pic/icons/Github-Icon.png" alt="Github">
+                                    </figure>
+                                </a>
+                                <a href="#">
+                                    <figure>
+                                        <img src="pic/icons/Instagram-Icon.png" alt="Instagram">
+                                    </figure>
+                                </a>
                             </div>
                         </figure>
                     </div>
                     <div class="roll">
                         <div class="roll-devider">
-                            <h2 class="roll-title">About Me</h2>
+                            <h2 class="roll-title">about me</h2>
 
                             <p class="roll-text">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
@@ -124,10 +129,27 @@
                                 laudantium? Tempore at unde ullam maxime error.
                             </p>
                             <ul class="personal-info">
-                                <li>date of birth</li>
-                                <li>languages</li>
-                                <li>hobbies</li>
-                                <li>website</li>
+                                <li>
+                                    <figure>
+                                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                                        <figcaption>date of birth</figcaption>
+                                    </figure>
+                                    <span>18 April 1990</span>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <i class="fa fa-language" aria-hidden="true"></i>
+                                        <figcaption>languages</figcaption>
+                                    </figure>
+                                    <span>persian, english, german, russian</span>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <i class="fa fa-gamepad" aria-hidden="true"></i>
+                                        <figcaption>hobbies</figcaption>
+                                    </figure>
+                                    <span>Gaming, hill climbing</span>
+                                </li>
                             </ul>
                             <p class="roll-text">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
@@ -139,8 +161,8 @@
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
                             </p>
-                            <button>hire me</button>
-                            <button>download resume</button>
+                            <button class="btn-black">hire me</button>
+                            <button class="btn-white">download resume</button>
                         </div>
                         <div class="roll-devider">
                             <h2 class="roll-title">what can i do</h2>
@@ -210,15 +232,86 @@
                                     <p>Lorem ipsum . Quibusdam corrupti tempore molestiae harum ab veniam eveniet. Dolor velit quasi cumque labore laborum iste amet voluptate officia consequatur, tempora odit repellendus.</p>
 
                                 </div>
-                                <button>prev</button>
-                                <button>next</button>
+                                <button class="btn-black">prev</button>
+                                <button class="btn-white" onclick="findNextSlider()">next</button>
 
                             </div>
                         </div>
                     </div>
-                    <div class="roll">3</div>
+                    <div class="roll">
+                        <div class="roll-devider">
+                            <h2 class="roll-title">experience</h2>
+
+                            <div class='text-container'>
+                                <h3 class="">Web Designer - Web Agency</h3>
+                                <h4 :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}">2005-2008</h4>
+                                <p class="roll-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
+                                    quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod
+                                    aliquid laudantium? Tempore at unde ullam maxime error.
+                                </p>
+                            </div>
+
+                            <div class='text-container'>
+                                <h3 class="">Web Designer - Web Agency</h3>
+                                <h4 :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}">2005-2008</h4>
+                                <p class="roll-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
+                                    quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod
+                                    aliquid laudantium? Tempore at unde ullam maxime error.
+                                </p>
+                            </div>
+
+                            <div class='text-container'>
+                                <h3 class="">Web Designer - Web Agency</h3>
+                                <h4 :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}">2005-2008</h4>
+                                <p class="roll-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
+                                    quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod
+                                    aliquid laudantium? Tempore at unde ullam maxime error.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="roll-devider">
+                            <h2 class="roll-title">skills</h2>
+                            <p class="roll-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure repellendus sequi in tempora, repudiandae maxime, nihil dolores, dolor reiciendis tenetur architecto quo error aut ab fugiat magnam? Consequuntur, dolore exercitationem.</p>
+                            <div class="skill-bar-container">
+                                skill bar is empty now
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="roll">4</div>
-                    <div class="roll">5</div>
+                    <div class="roll">
+                        <div class="roll-devider">
+                            <h2 class="roll-title">contact</h2>
+
+                            <p class="roll-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
+                                quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
+                                laudantium? Tempore at unde ullam maxime error.
+                            </p>
+                            <ul class="personal-info">
+                                <li>date of birth</li>
+                                <li>languages</li>
+                                <li>hobbies</li>
+                                <li>website</li>
+                            </ul>
+                            <p class="roll-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
+                                quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
+                                laudantium? Tempore at unde ullam maxime error.
+                            </p>
+                            <p class="roll-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
+                                quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
+                                laudantium? Tempore at unde ullam maxime error.
+                            </p>
+                            <button>hire me</button>
+                            <button>download resume</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
