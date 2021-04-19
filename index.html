@@ -26,7 +26,7 @@
 
 <body>
     <div class="wrapper" id="demo">
-        <div class="navigation-container" :class="{'bg-lc-1':!darkMode, 'bg-dc-1':darkMode}" id="nav">
+        <div class="navigation-container" :class="{'bg-lc-1':!darkMode, 'bg-dark-blue':darkMode}" id="nav">
             <button class="nav-btn" id="menuBtn" :class="{'bg-lc-2':!darkMode,'bg-dc-2':darkMode}">
                 <i class="fas fa-bars txt-white"></i>
             </button>
@@ -77,7 +77,7 @@
                     <div class="roll bg-info">
                         <figure class="roll-fig">
                             <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img.jpg" alt="roll 5">
-                            <div class="name-tag" :class="{'bg-lc-2':!darkMode,'bg-dc-2':darkMode,'name-tag-move':tagMove ,'txt-white' :!darkMode,'txt-not-white' :darkMode}">Amir</div>
+                            <div class="name-tag txt-white" :class="{'bg-lc-2':!darkMode,'bg-dc-2':darkMode,'name-tag-move':tagMove }">Amir</div>
                         </figure>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                     <div class="roll p-0">
                         <figure class="roll-fig">
                             <img class="roll-img" src="http://divergent-wp.wp4life.com/wp-content/uploads/2015/10/img2.jpg" alt="roll 1">
-                            <div class="family-tag" :class="{'bg-lc-1':!darkMode,'bg-dc-1':darkMode,'family-tag-move':tagMove,'txt-white' :!darkMode,'txt-not-white' :darkMode}">Mohseni</div>
+                            <div class="family-tag txt-white" :class="{'bg-lc-1':!darkMode,'bg-lc-2':darkMode,'family-tag-move':tagMove,}">Mohseni</div>
                             <div class="describe-tag" :class="{'bg-white':!darkMode,'bg-not-white':darkMode,'describe-tag-move':tagMove ,'txt-black' :!darkMode,'txt-not-black' :darkMode}">Web Designer & Developer</div>
                             <div class="social-tag" :class="{'bg-white':!darkMode,'bg-not-white':darkMode,'social-tag-move':tagMove}">
                                 <a href="#">
@@ -119,11 +119,11 @@
                             </div>
                         </figure>
                     </div>
-                    <div class="roll">
+                    <div class="roll" :class="{'bg-white':!darkMode,'bg-dark-blue':darkMode}">
                         <div class="roll-devider">
-                            <h2 class="roll-title">about me</h2>
+                            <h2 class="roll-title" :class="{'txt-black':!darkMode,'txt-white':darkMode,}">about me</h2>
 
-                            <p class="roll-text">
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
@@ -132,31 +132,31 @@
                                 <li>
                                     <figure>
                                         <i class="fa fa-user-o" aria-hidden="true"></i>
-                                        <figcaption>date of birth</figcaption>
+                                        <figcaption :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">date of birth</figcaption>
                                     </figure>
-                                    <span>18 April 1990</span>
+                                    <span :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">18 April 1990</span>
                                 </li>
                                 <li>
                                     <figure>
                                         <i class="fa fa-language" aria-hidden="true"></i>
-                                        <figcaption>languages</figcaption>
+                                        <figcaption :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">languages</figcaption>
                                     </figure>
-                                    <span>persian, english, german, russian</span>
+                                    <span :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">persian, english, german, russian</span>
                                 </li>
                                 <li>
                                     <figure>
                                         <i class="fa fa-gamepad" aria-hidden="true"></i>
-                                        <figcaption>hobbies</figcaption>
+                                        <figcaption :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">hobbies</figcaption>
                                     </figure>
-                                    <span>Gaming, hill climbing</span>
+                                    <span :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">Gaming, hill climbing</span>
                                 </li>
                             </ul>
-                            <p class="roll-text">
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
                             </p>
-                            <p class="roll-text">
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
@@ -165,87 +165,84 @@
                             <button class="btn-white">download resume</button>
                         </div>
                         <div class="roll-devider">
-                            <h2 class="roll-title">what can i do</h2>
+                            <h2 class="roll-title" :class="{'txt-black':!darkMode,'txt-white':darkMode,}">what can i do</h2>
 
                             <div class="what-can-i-do-container">
                                 <div>
                                     <figure>
                                         <img src="" alt="">
                                     </figure>
-                                    <h3>web design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
+                                    <h3 :class="{'txt-black':!darkMode,'txt-white':darkMode,}">web design</h3>
+                                    <p :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
                                 </div>
                                 <div>
                                     <figure>
                                         <img src="" alt="">
                                     </figure>
-                                    <h3>web design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
+                                    <h3 :class="{'txt-black':!darkMode,'txt-white':darkMode,}">web design</h3>
+                                    <p :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
                                 </div>
                                 <div>
                                     <figure>
                                         <img src="" alt="">
                                     </figure>
-                                    <h3>web design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
+                                    <h3 :class="{'txt-black':!darkMode,'txt-white':darkMode,}">web design</h3>
+                                    <p :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
                                 </div>
                                 <div>
                                     <figure>
                                         <img src="" alt="">
                                     </figure>
-                                    <h3>web design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
+                                    <h3 :class="{'txt-black':!darkMode,'txt-white':darkMode,}">web design</h3>
+                                    <p :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
                                 </div>
                                 <div>
                                     <figure>
                                         <img src="" alt="">
                                     </figure>
-                                    <h3>web design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
+                                    <h3 :class="{'txt-black':!darkMode,'txt-white':darkMode,}">web design</h3>
+                                    <p :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta repudiandae sapiente pariatur nesciunt quibusdam quaerat. Beatae quia similique nihil.</p>
                                 </div>
 
                             </div>
                         </div>
                         <div class="roll-devider">
-                            <h2 class="roll-title">certification & example</h2>
+                            <h2 class="roll-title" :class="{'txt-black':!darkMode,'txt-white':darkMode,}">certification & example</h2>
 
                             <div class="slider-container">
                                 <div class="slide slide-1">
-                                    1
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti tempore molestiae harum ab veniam eveniet. Dolor velit quasi cumque labore laborum iste amet voluptate officia consequatur, tempora odit repellendus.</p>
+                                    <p class="cate-certification">John Doe</p>
                                 </div>
 
                                 <div class="slide slide-2">
-                                    2
                                     <p>Lorem ipsum dolor sit amet consectetur . Quibusdam corrupti tempore molestiae harum ab veniam eveniet. Dolor velit quasi cumque labore laborum iste amet voluptate officia consequatur, tempora odit repellendus.</p>
-
+                                    <p class="cate-certification">Michael Stone</p>
                                 </div>
 
                                 <div class="slide slide-3">
-                                    3
                                     <p>Lorem ipsum dolor sit amet . Quibusdam corrupti tempore molestiae harum ab veniam eveniet. Dolor velit quasi cumque labore laborum iste amet voluptate officia consequatur, tempora odit repellendus.</p>
-
+                                    <p class="cate-certification">Mary Jennings</p>
                                 </div>
 
                                 <div class="slide slide-4">
-                                    4
                                     <p>Lorem ipsum . Quibusdam corrupti tempore molestiae harum ab veniam eveniet. Dolor velit quasi cumque labore laborum iste amet voluptate officia consequatur, tempora odit repellendus.</p>
-
+                                    <p class="cate-certification">Walter White</p>
                                 </div>
-                                <button class="btn-black">prev</button>
-                                <button class="btn-white" onclick="findNextSlider()">next</button>
+                                <button class="btn-black" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></button>
+                                <button class="btn-white" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></button>
 
                             </div>
                         </div>
                     </div>
-                    <div class="roll">
+                    <div class="roll" :class="{'bg-white':!darkMode,'bg-dark-blue':darkMode}">
                         <div class="roll-devider">
-                            <h2 class="roll-title">experience</h2>
+                            <h2 class="roll-title" :class="{'txt-black':!darkMode,'txt-white':darkMode}">experience</h2>
 
                             <div class='text-container'>
-                                <h3 class="">Web Designer - Web Agency</h3>
-                                <h4 :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}">2005-2008</h4>
-                                <p class="roll-text">
+                                <h3 class="" :class="{'txt-black':!darkMode,'txt-white':darkMode}">Web Designer - Web Agency</h3>
+                                <h4 :class="{'txt-black':!darkMode,'txt-white':darkMode}">2005-2008</h4>
+                                <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode}">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                     quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod
                                     aliquid laudantium? Tempore at unde ullam maxime error.
@@ -253,9 +250,9 @@
                             </div>
 
                             <div class='text-container'>
-                                <h3 class="">Web Designer - Web Agency</h3>
-                                <h4 :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}">2005-2008</h4>
-                                <p class="roll-text">
+                                <h3 class="" :class="{'txt-black':!darkMode,'txt-white':darkMode}">Web Designer - Web Agency</h3>
+                                <h4 :class="{'txt-black':!darkMode,'txt-white':darkMode}">2005-2008</h4>
+                                <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode}">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                     quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod
                                     aliquid laudantium? Tempore at unde ullam maxime error.
@@ -263,9 +260,9 @@
                             </div>
 
                             <div class='text-container'>
-                                <h3 class="">Web Designer - Web Agency</h3>
-                                <h4 :class="{'txt-lc-3':!darkMode,'txt-dc-3':darkMode}">2005-2008</h4>
-                                <p class="roll-text">
+                                <h3 class="" :class="{'txt-black':!darkMode,'txt-white':darkMode}">Web Designer - Web Agency</h3>
+                                <h4 :class="{'txt-black':!darkMode,'txt-white':darkMode}">2005-2008</h4>
+                                <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode}">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                     quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod
                                     aliquid laudantium? Tempore at unde ullam maxime error.
@@ -274,20 +271,20 @@
 
                         </div>
                         <div class="roll-devider">
-                            <h2 class="roll-title">skills</h2>
-                            <p class="roll-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure repellendus sequi in tempora, repudiandae maxime, nihil dolores, dolor reiciendis tenetur architecto quo error aut ab fugiat magnam? Consequuntur, dolore exercitationem.</p>
-                            <div class="skill-bar-container">
+                            <h2 class="roll-title" :class="{'txt-black':!darkMode,'txt-white':darkMode}">skills</h2>
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode}">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure repellendus sequi in tempora, repudiandae maxime, nihil dolores, dolor reiciendis tenetur architecto quo error aut ab fugiat magnam? Consequuntur, dolore exercitationem.</p>
+                            <div class="skill-bar-container" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode}">
                                 skill bar is empty now
                             </div>
                         </div>
 
                     </div>
-                    <div class="roll">4</div>
-                    <div class="roll">
+                    <div class="roll" :class="{'bg-white':!darkMode,'bg-dark-blue':darkMode}">4</div>
+                    <div class="roll" :class="{'bg-white':!darkMode,'bg-dark-blue':darkMode}">
                         <div class="roll-devider">
-                            <h2 class="roll-title">contact</h2>
+                            <h2 class="roll-title" :class="{'txt-black':!darkMode,'txt-white':darkMode,}">contact</h2>
 
-                            <p class="roll-text">
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
@@ -298,18 +295,18 @@
                                 <li>hobbies</li>
                                 <li>website</li>
                             </ul>
-                            <p class="roll-text">
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
                             </p>
-                            <p class="roll-text">
+                            <p class="roll-text" :class="{'txt-lc-3':!darkMode,'txt-white':darkMode,}">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae omnis fugit, tenetur expedita, accusamus repudiandae hic, eius consectetur quo ullam nisi rem facilis quasi voluptatum mollitia autem. Voluptatum quisquam, assumenda laboriosam saepe accusamus
                                 quia aspernatur aut officiis nulla ullam soluta tempore non adipisci dignissimos. Deserunt expedita laborum pariatur officiis voluptatem est, similique delectus quisquam veritatis consequatur ea placeat assumenda quod aliquid
                                 laudantium? Tempore at unde ullam maxime error.
                             </p>
-                            <button>hire me</button>
-                            <button>download resume</button>
+                            <button class=btn-black>hire me</button>
+                            <button class="btn-white">download resume</button>
                         </div>
                     </div>
                 </div>
@@ -345,24 +342,47 @@
             document.getElementById("rightRoll").style.transform = "translateY(" + -(navCounter - 1) * this.rollHeight + "px)";
         }
         //        _____________________________________________JS for slider main
-        var countSlide = 0;
-        setInterval(findNextSlider, 6000);
+        // var countSlide = 0;
+        // // setInterval(findNextSlider, 6000);
 
-        var __l = parseInt($('.slide').length);
+        // var __l = parseInt($('.slide').length);
 
-        findNextSlider();
+        // findNextSlider();
 
-        function findNextSlider() {
+        // function findNextSlider() {
 
-            if (countSlide < __l) {
-                $('.slide').css('opacity', '0');
-                $('.slide').eq(countSlide).css('opacity', '1');
-                countSlide++;
-            } else if (countSlide == __l) //make counter 0 to start over dynamically
-            {
-                countSlide = 0;
-                findNextSlider();
+        //     if (countSlide < __l) {
+        //         $('.slide').css('opacity', '0');
+        //         $('.slide').eq(countSlide).css('opacity', '1');
+        //         countSlide++;
+        //     } else if (countSlide == __l) //make counter 0 to start over dynamically
+        //     {
+        //         countSlide = 0;
+        //         findNextSlider();
+        //     }
+        // }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {
+                slideIndex = 1
             }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+
+            slides[slideIndex - 1].style.opacity = 1;
+
         }
     </script>
 

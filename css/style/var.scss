@@ -29,6 +29,7 @@ $d-color-3:blue;
 $d-color-4:yellow;
 $not-white:black;
 $not-black:white;
+$dark-Blue:#041f30;
 // _____________________________font sizes variables
 $fz-1:16;
 $fz-2:18;
@@ -80,6 +81,10 @@ $fz-5:30;
 
 .bg-black {
     background-color: $black;
+}
+
+.bg-dark-blue {
+    background-color: $dark-Blue;
 }
 
 // text color classes

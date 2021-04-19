@@ -92,7 +92,6 @@
                     justify-content: flex-start;
                     align-items: flex-start;
                     flex-flow: column nowrap;
-                    @extend .bg-white;
                     overflow: hidden;
                     .what-can-i-do-container {
                         display: flex;
@@ -171,6 +170,7 @@
                             transition: $base-transition+s;
                             @extend .fz-4;
                             padding: 30px 60px;
+                            font-weight: bold;
                         }
                         .describe-tag-move {
                             transform: translateX(0);
@@ -197,6 +197,7 @@
                                 align-items: center;
                                 margin: 0;
                                 position: relative;
+                                border-right: 1px solid rgba(192, 192, 192, 0.3);
                                 &:hover img {
                                     filter: grayscale(0);
                                     transform: scale(1.1);
@@ -256,7 +257,6 @@
                     }
                     .roll-text {
                         @extend .fz-1;
-                        color: $l-color-3;
                     }
                     .personal-info {
                         padding: 0;
@@ -321,17 +321,54 @@
         width: 100%;
         min-height: 300px;
         position: relative;
-        overflow: hidden;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
         .slide {
             width: 100%;
-            height: 70%;
+            height: 74%;
             position: absolute;
-            top: 30%;
+            top: 7%;
             left: 0;
             opacity: 0;
             transition: 1s;
             background-color: $l-color-5;
             @extend .pd-3;
+            display: block;
+            // flex-flow: column nowrap;
+            // justify-content: space-between;
+            &:before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f15b";
+                background-color: $l-color-2;
+                color: $white;
+                border: 5px solid $white;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: -10px;
+                left: -6px;
+                @extend .fz-4;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                @extend .mg-t-1;
+                text-indent: 40px;
+                line-height: 1.7;
+                color: $l-color-3;
+                @extend .pd-r-3;
+                @extend .pd-l-3;
+            }
+            .cate-certification {
+                text-align: right;
+                font-weight: bold;
+                &:before {
+                    content: "— ";
+                }
+            }
         }
     }
 }
